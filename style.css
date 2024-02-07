@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*
+https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+*/
+/*
+Theme Name: Theme Golden Chris
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Theme de base développer en classe par Christopher Simeus
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Theme-Gold
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+:root {
+  --couleur-arriere-entete: #1d1d1d;
+  --couleur-arriere-accueil: #353535;
+  --couleur-arriere-evenement: #747a05;
+  --couleur-arriere-galerie: #6b0000;
+  --couleur-arriere-footer: #360101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.global {
+  min-height: 100vh;
+}
+
+.global > section,
+.global > header,
+.global > footer {
+  flex: 0 1 1100px;
+  border: 1px solid #aaa;
+}
+
+#entete {
+  background-color: var(--couleur-arriere-entete);
+}
+
+#accueil {
+  background-color: var(--couleur-arriere-accueil);
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+}
+
+#galerie {
+  background-color: var(--couleur-arriere-galerie);
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
+}
+
+h1 {
+  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+}/*# sourceMappingURL=style.css.map */
