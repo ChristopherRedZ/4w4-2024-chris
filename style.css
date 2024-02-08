@@ -20,8 +20,8 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 :root {
-  --couleur-arriere-entete: #1d1d1d;
-  --couleur-arriere-accueil: #353535;
+  --couleur-arriere-entete: #e30000;
+  --couleur-arriere-accueil: #cbcbcb;
   --couleur-arriere-evenement: #747a05;
   --couleur-arriere-galerie: #6b0000;
   --couleur-arriere-footer: #360101;
@@ -38,13 +38,15 @@ body {
 }
 
 .global {
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-height: 40vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1100px;
+  flex: 0 1 900px;
   border: 1px solid #aaa;
 }
 
@@ -70,4 +72,12 @@ body {
 
 h1 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-weight: 600;
+  font-family: "Teko", sans-serif;
+  color: whitesmoke;
+}
+
+h2 {
+  font-size: clamp(1rem, 0.844rem + 0.5vw, 1.125rem);
+  font-family: "Orbitron", sans-serif;
 }/*# sourceMappingURL=style.css.map */
