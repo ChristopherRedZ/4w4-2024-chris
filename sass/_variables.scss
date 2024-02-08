@@ -1,7 +1,16 @@
 :root {
-    --couleur-arriere-entete : #e30000;
+    --couleur-arriere-entete : #7c6731;
     --couleur-arriere-accueil : #cbcbcb;
-    --couleur-arriere-evenement : #747a05;
-    --couleur-arriere-galerie : #6b0000;
-    --couleur-arriere-footer : #360101;
+    --couleur-arriere-evenement : #dbb658;
+    --couleur-arriere-galerie : #cbcbcb;
+    --couleur-arriere-footer : #7c6731;
+
+    /* Niveau de transparence des h1 */
+
+    --transparence-h1: .4;
+    --transparence-section: .3;
+
+    /* Largeur des sections */
+
+    --largeur-section: 80vw;
 }

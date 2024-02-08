@@ -20,11 +20,16 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 :root {
-  --couleur-arriere-entete: #e30000;
+  --couleur-arriere-entete: #7c6731;
   --couleur-arriere-accueil: #cbcbcb;
-  --couleur-arriere-evenement: #747a05;
-  --couleur-arriere-galerie: #6b0000;
-  --couleur-arriere-footer: #360101;
+  --couleur-arriere-evenement: #dbb658;
+  --couleur-arriere-galerie: #cbcbcb;
+  --couleur-arriere-footer: #7c6731;
+  /* Niveau de transparence des h1 */
+  --transparence-h1: .4;
+  --transparence-section: .3;
+  /* Largeur des sections */
+  --largeur-section: 80vw;
 }
 
 * {
@@ -47,7 +52,13 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  border: 1px solid #aaa;
+  padding: 3rem 1rem;
+  background-color: rgba(0, 0, 0, var(--transparence-section));
+  min-width: var(--largeur-section);
+}
+
+#entete, #footer {
+  min-height: 15vh;
 }
 
 #entete {
@@ -72,12 +83,41 @@ body {
 
 h1 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
-  font-weight: 600;
+  font-weight: 700;
   font-family: "Teko", sans-serif;
-  color: whitesmoke;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 h2 {
-  font-size: clamp(1rem, 0.844rem + 0.5vw, 1.125rem);
+  font-size: clamp(1.5rem, 0.844rem + 0.5vw, 1.125rem);
   font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #dbb658 0px 0px 20px, #dbb658 0px 0px 30px, #FF2D95 0px 0px 40px, #dbb658 0px 0px 50px, #dbb658 0px 0px 75px;
+  color: #FFFFFF;
+}
+
+h3 {
+  padding-top: 50px;
+  font-size: clamp(0.5rem, 0.844rem + 0.5vw, 1.125rem);
+  font-family: "Teko", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: larger;
+}
+
+h4 {
+  padding-top: 50px;
+  font-family: "Orbitron", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+h5 {
+  padding-top: 50px;
+  font-family: "Orbitron", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+h6 {
+  padding-top: 50px;
+  font-family: "Orbitron", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=style.css.map */
