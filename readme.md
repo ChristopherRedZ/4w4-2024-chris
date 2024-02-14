@@ -9,4 +9,4 @@
 ## Ce que vous devez faire: 
 
 ### Utiliser la fonction hsl()
-### Integrer les vagues et une diagona
+### Integrer les vagues et une diagonal
