@@ -1,12 +1,17 @@
 # Labo #2
-## Utilisation  de la fonction hsl()
+## Utilisation de la fonction hsl()
 ## Integration d'effet vague et diagonal
 
-## Reference utiles
+### Références utiles
 
-- Reference hsl()
+- référence hsl()
+ - https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl
+ - https://css-tricks.com/creating-color-themes-with-custom-properties-hsl-and-a-little-calc/
+ - https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
 
-## Ce que vous devez faire: 
 
-### Utiliser la fonction hsl()
-### Integrer les vagues et une diagonal
+## Ce que vous devez faire:
+
+### Utiser la fonction hsl
+### Intégrer les vagues
+### intégrer une diagonal
