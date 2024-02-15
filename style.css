@@ -20,16 +20,26 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 :root {
-  --couleur-arriere-entete: #7c6731;
-  --couleur-arriere-accueil: #cbcbcb;
-  --couleur-arriere-evenement: #dbb658;
-  --couleur-arriere-galerie: #cbcbcb;
-  --couleur-arriere-footer: #7c6731;
-  /* Niveau de transparence des h1 */
-  --transparence-h1: .4;
-  --transparence-section: .3;
   /* Largeur des sections */
   --largeur-section: 80vw;
+  --u1: 59;
+  --u2: calc(var(--u1) + 180);
+  --u3: calc(var(--u2) - 30);
+  --u4: calc(var(--u2) + 30);
+  --s-arriere: 46%;
+  --s-avant: 176%;
+  --l-arriere: 8%;
+  --l-avant: 102%;
+  --couleur-arriere-entete: hsl(var(--u1),100% ,30%);
+  --couleur-arriere-accueil: hsl(var(--u1),100% ,25%);
+  --couleur-arriere-galerie: hsl(var(--u1),100% ,15%);
+  --couleur-arriere-footer: var(--couleur-arriere-galerie);
+  --couleur-arriere-evenement: var(--couleur-arriere-galerie);
+  --couleur-entete: hsl(var(--u1),0% ,0%);
+  --couleur-accueil: hsl(var(--u1),0% ,0%);
+  --couleur-evenement: hsl(var(--u1),100% ,20%);
+  --couleur-galerie: hsl(var(--u1),100% ,15%);
+  --couleur-footer: hsl(var(--u1),100% ,10%);
 }
 
 * {
@@ -63,29 +73,70 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
+  position: relative;
 }
 
 #accueil {
+  display: flex;
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-accueil);
+  position: relative;
 }
+/* button */
+.btn{
+  font-family: Teko;
+  font-weight: 100;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(163deg, #ffe065 0%, #000000 100%);
+  
+  padding: 10px 30px;
+  border: solid #ffffff 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 0px 50px;
+  transition : 491ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  
+  }
+  
+  .btn:hover{
+  transition : 491ms;
+  padding: 10px 100px;
+  transform : translateY(-1px);
+  background: linear-gradient(163deg, #ffe065 0%, #000000 100%);
+  color: #ffffff;
+  border: solid 2px #000000;
+  
+  }
+
+/* Button fin */
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-evenement);
+  position: relative;
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }
 
 h1 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 700;
   font-family: "Teko", sans-serif;
-  color: rgba(255, 255, 255, 0.5);
 }
 
 h2 {
@@ -93,31 +144,81 @@ h2 {
   font-family: "Orbitron", sans-serif;
   font-weight: 500;
   text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #dbb658 0px 0px 20px, #dbb658 0px 0px 30px, #FF2D95 0px 0px 40px, #dbb658 0px 0px 50px, #dbb658 0px 0px 75px;
-  color: #FFFFFF;
 }
 
 h3 {
   padding-top: 50px;
   font-size: clamp(0.5rem, 0.844rem + 0.5vw, 1.125rem);
   font-family: "Teko", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
   font-size: larger;
 }
 
 h4 {
   padding-top: 50px;
   font-family: "Orbitron", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
 }
 
 h5 {
   padding-top: 50px;
   font-family: "Orbitron", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
 }
 
 h6 {
   padding-top: 50px;
   font-family: "Orbitron", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(160% + 1.3px);
+  height: 129px;
+}
+
+.vague .shape-fill {
+  fill: var(--couleur-arriere-accueil);
+}
+
+.vague2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.vague2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.vague2 .shape-fill {
+  fill: var(--couleur-arriere-accueil);
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #807d00;
+  z-index: -1;
+  transform: skewY(-3deg);
 }/*# sourceMappingURL=style.css.map */

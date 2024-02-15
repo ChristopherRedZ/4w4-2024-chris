@@ -1,16 +1,77 @@
 :root {
-    --couleur-arriere-entete : #7c6731;
-    --couleur-arriere-accueil : #cbcbcb;
-    --couleur-arriere-evenement : #dbb658;
-    --couleur-arriere-galerie : #cbcbcb;
-    --couleur-arriere-footer : #7c6731;
+    // --couleur-arriere-entete : #7c6731;
+    // --couleur-arriere-accueil : #cbcbcb;
+    // --couleur-arriere-evenement : #dbb658;
+    // --couleur-arriere-galerie : #cbcbcb;
+    // --couleur-arriere-footer : #7c6731;
 
-    /* Niveau de transparence des h1 */
+    // /* Niveau de transparence des h1 */
 
-    --transparence-h1: .4;
-    --transparence-section: .3;
+    // --transparence-h1: .4;
+    // --transparence-section: .3;
 
     /* Largeur des sections */
 
     --largeur-section: 80vw;
+
+    //Calcul des teintes//
+
+    --u1 : 59; //Couleur initiale//
+    --u2 : calc(var(--u1) + 180); //couleur complementaire//
+    --u3 : calc(var(--u2) - 30); //couleur analogue gauche
+    --u4 : calc(var(--u2) + 30); //couleur analogue droite
+    //La saturation//
+
+    --s-arriere: 46%;
+    --s-avant: 176%;
+
+    //La luminosite
+    --l-arriere: 8%;
+
+    --l-avant: 102%;
+
+
+    //Couleur monochrome arriere plan
+
+    --couleur-arriere-entete: hsl(var(--u1),100% ,30%);
+    --couleur-arriere-accueil: hsl(var(--u1),100% ,25%);
+    //--couleur-arriere-evenement: hsl(var(--u1),100% ,20%);
+    --couleur-arriere-galerie: hsl(var(--u1),100% ,15%);
+    //--couleur-arriere-footer: hsl(var(--u1),100% ,10%);
+
+    //---------------pour diagonals-------------------//
+    --couleur-arriere-footer: var(--couleur-arriere-galerie);
+    --couleur-arriere-evenement: var(--couleur-arriere-galerie);
+
+    //Couleur monocrome avant plan
+
+    --couleur-entete: hsl(var(--u1),0% ,0%);
+    --couleur-accueil: hsl(var(--u1),0% ,0%);
+    --couleur-evenement: hsl(var(--u1),100% ,20%);
+    --couleur-galerie: hsl(var(--u1),100% ,15%);
+    --couleur-footer: hsl(var(--u1),100% ,10%);
+
+    
+
+
+
+
+    //Couleur arriere plan - background-color//
+
+    // --couleur-arriere-entete: hsl(var(--u1),var(--s-arriere),var(--l-arriere));
+    // --couleur-arriere-accueil: hsl(var(--u2),var(--s-arriere),var(--l-arriere));
+    // --couleur-arriere-evenement: hsl(var(--u3),var(--s-arriere),var(--l-arriere));
+    // --couleur-arriere-galerie: hsl(var(--u4),var(--s-arriere),var(--l-arriere));
+    // --couleur-arriere-footer: hsl(var(--u1),var(--s-arriere),var(--l-arriere));
+
+    //Couleur avant plan - color //
+
+    // --couleur-entete: hsl(var(--u1),var(--s-avant),var(--l-avant));
+    // --couleur-accueil: hsl(var(--u2),var(--s-avant),var(--l-avant));
+    // --couleur-evenement: hsl(var(--u3),var(--s-avant),var(--l-avant));
+    // --couleur-galerie: hsl(var(--u4),var(--s-avant),var(--l-avant));
+    // --couleur-footer: hsl(var(--u1),var(--s-avant),var(--l-avant));
+
+
+
 }
