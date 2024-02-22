@@ -116,7 +116,6 @@ h1 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 700;
   font-family: "Teko", sans-serif;
-  
 }
 
 h2 {
@@ -141,11 +140,25 @@ h4 {
 h5 {
   padding-top: 50px;
   font-family: "Orbitron", sans-serif;
+  background-color: #9e9e9e;
+  border-left: black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-style: solid;
+  margin: 10px;
 }
 
 h6 {
   padding-top: 50px;
   font-family: "Orbitron", sans-serif;
+  background-color: #9e9e9e;
+  border-left: black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-style: solid;
+  margin: 10px;
 }
 
 button {
@@ -153,6 +166,7 @@ button {
   padding: 12px 24px;
   background-image: linear-gradient(120deg, #ffffff, #4d4d4d);
   margin-top: 30px;
+  flex-grow: 0;
 }
 
 button:hover {
@@ -212,8 +226,22 @@ button:hover {
   background-color: #807d00;
   z-index: -1;
   transform: skewY(-3deg);
-}/*# sourceMappingURL=style.css.map */
-
-@media (min-width: 300px) and (max-width: 600px) {
-  
 }
+@media (min-width:300px) and (max-width:600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .global > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
