@@ -78,44 +78,10 @@ body {
 }
 
 #accueil {
-  display: flex;
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-accueil);
   position: relative;
 }
-/* button */
-.btn{
-  font-family: Teko;
-  font-weight: 100;
-  font-size: 18px;
-  color: #fff;
-  background: linear-gradient(163deg, #ffe065 0%, #000000 100%);
-  
-  padding: 10px 30px;
-  border: solid #ffffff 2px;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-  border-radius: 0px 50px;
-  transition : 491ms;
-  transform: translateY(0);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  
-  }
-  
-  .btn:hover{
-  transition : 491ms;
-  padding: 10px 100px;
-  transform : translateY(-1px);
-  background: linear-gradient(163deg, #ffe065 0%, #000000 100%);
-  color: #ffffff;
-  border: solid 2px #000000;
-  
-  }
-
-/* Button fin */
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
