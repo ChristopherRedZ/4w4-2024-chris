@@ -61,10 +61,14 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
+  flex: 0 1 1100px;
   padding: 3rem 1rem;
   background-color: rgba(0, 0, 0, var(--transparence-section));
   min-width: var(--largeur-section);
+}
+
+.global > header {
+  flex: 1;
 }
 
 #entete, #footer {
@@ -75,47 +79,14 @@ body {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
   position: relative;
+  min-height: 65vh;
 }
 
 #accueil {
-  display: flex;
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-accueil);
   position: relative;
 }
-/* button */
-.btn{
-  font-family: Teko;
-  font-weight: 100;
-  font-size: 18px;
-  color: #fff;
-  background: linear-gradient(163deg, #ffe065 0%, #000000 100%);
-  
-  padding: 10px 30px;
-  border: solid #ffffff 2px;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-  border-radius: 0px 50px;
-  transition : 491ms;
-  transform: translateY(0);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  
-  }
-  
-  .btn:hover{
-  transition : 491ms;
-  padding: 10px 100px;
-  transform : translateY(-1px);
-  background: linear-gradient(163deg, #ffe065 0%, #000000 100%);
-  color: #ffffff;
-  border: solid 2px #000000;
-  
-  }
-
-/* Button fin */
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
@@ -131,6 +102,14 @@ body {
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+.entete__header {
+  background-image: url(/images/GoldBar.png);
+  background-repeat: no-repeat;
+  background-position: 95% 40%;
+  width: 50px;
+  background-size: 500px;
 }
 
 h1 {
@@ -161,11 +140,36 @@ h4 {
 h5 {
   padding-top: 50px;
   font-family: "Orbitron", sans-serif;
+  background-color: #9e9e9e;
+  border-left: black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-style: solid;
+  margin: 10px;
 }
 
 h6 {
   padding-top: 50px;
   font-family: "Orbitron", sans-serif;
+  background-color: #9e9e9e;
+  border-left: black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-style: solid;
+  margin: 10px;
+}
+
+button {
+  font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
+  padding: 12px 24px;
+  background-image: linear-gradient(120deg, #ffffff, #4d4d4d);
+  margin-top: 30px;
+}
+
+button:hover {
+  background-image: linear-gradient(120deg, #7a7a7a, #1f1f1f);
 }
 
 .vague {
