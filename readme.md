@@ -1,6 +1,4 @@
-# Labo #2
-## Utilisation de la fonction hsl()
-## Integration d'effet vague et diagonal
+
 
 ### Références utiles
 
@@ -12,6 +10,7 @@
 
 ## Ce que vous devez faire:
 
-### Utiser la fonction hsl
-### Intégrer les vagues
-### intégrer une diagonal
+### Completer l'exercice 1
+
+- lien de la page 
+-   https://github.com/ChristopherRedZ/4w4-2024-chris/tree/exer1
