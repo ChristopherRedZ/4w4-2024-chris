@@ -1,16 +1,34 @@
 
 
-### Références utiles
+# Labo #3
 
-- référence hsl()
- - https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl
- - https://css-tricks.com/creating-color-themes-with-custom-properties-hsl-and-a-little-calc/
- - https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
+## Creation d'un site WP
+- Adaptation du thème de exercice #1
+- Création du modèle index.php
+- Création de la branche labo3
+- minimum 3 commits
+- Un Readme.md qui contiendra:
+-   Le nom de l'auteur
+-   L'objectif du labo3
+-   Les réalisations
+-   Un lien vers la github-page
+-   Décomposé le titre de chaque cours:
+    - sigle du cours ex: 582-4W4
+    - le titre du cours  ex: Conception d'interface et développement Web
+    - la durée du cours : 90h
+
+-Garder les 30 premiers mots de la description du cours.
 
 
-## Ce que vous devez faire:
 
-### Completer l'exercice 1
 
-- lien de la page 
--   https://github.com/ChristopherRedZ/4w4-2024-chris/tree/exer1
+#### La section galerie affichera la liste des cours du TIM en 4 colonnes.
+
+- La liste devra s'adapter aux différentes largeurs de fenêtre.
+
+- Chacune des cartes de cours sera formatés en en utilisant les flex box
+
+### Bareme de correction
+    - Organisation du code , 3 commits minimum(1 points)
+    - Page github
+    - aspect visuel de la page
