@@ -227,21 +227,18 @@ button:hover {
   z-index: -1;
   transform: skewY(-3deg);
 }
-@media (min-width:300px) and (max-width:600px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .global > section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
+.cours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
 }
-/*# sourceMappingURL=style.css.map */
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 20%;
+  border: 1px solid #aaa;
+}/*# sourceMappingURL=style.css.map */
