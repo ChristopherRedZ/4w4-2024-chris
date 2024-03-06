@@ -11,7 +11,7 @@ body{
 .global {
     display: flex;
     justify-content: center;
-    min-height: 40vh;
+    // min-height: 40vh;
 
 }
 
@@ -27,7 +27,7 @@ body{
     min-width:var(--largeur-section);
 }
 
-.global > header{
+.global > .hero{
     flex: 1;
     
 }
@@ -35,6 +35,10 @@ body{
 
 min-height: 15vh;
 
+}
+
+#menu {
+    
 }
 
 #entete{

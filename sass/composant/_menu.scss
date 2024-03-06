@@ -1,0 +1,33 @@
+// Feuille de style menu principal
+
+.menu-principal-container { //Nav
+    background: rgb(0,0,0);
+    background: linear-gradient(157deg, rgba(0,0,0,1) 0%, rgba(121,113,9,1) 35%, rgba(255,241,0,1) 100%);
+    border: 5px solid whitesmoke;
+    .menu { //ul
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu-item { //li
+    flex: 1 0 50px;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    
+    }
+    
+    .menu-item a { //li a
+        color: #fff;
+        text-decoration: none;
+        font-size: clamp(1rem, -1.292rem + 7.333vw, 1.75rem);
+        font-weight: 700;
+        font-family: 'Teko', sans-serif;
+    }
+}
+
+#menu {
+    background-color: var(--couleur-arriere-accueil);
+}
+

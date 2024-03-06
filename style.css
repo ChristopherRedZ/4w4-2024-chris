@@ -58,7 +58,6 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
 }
 
 .global > section,
@@ -70,7 +69,7 @@ body {
   min-width: var(--largeur-section);
 }
 
-.global > header {
+.global > .hero {
   flex: 1;
 }
 
@@ -107,8 +106,8 @@ body {
   color: var(--couleur-footer);
 }
 
-.entete__header {
-  background-image: url(/images/GoldBar.png);
+.hero {
+  background-image: url(images/GoldBar.png);
   background-repeat: no-repeat;
   background-position: 95% 40%;
   width: 50px;
@@ -246,4 +245,32 @@ button:hover {
   border: 1px solid #aaa;
   background-color: var(--_couleur-arriere);
   padding: 1rem;
+}
+
+.menu-principal-container {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(157deg, rgb(0, 0, 0) 0%, rgb(121, 113, 9) 35%, rgb(255, 241, 0) 100%);
+  border: 5px solid whitesmoke;
+}
+.menu-principal-container .menu {
+  display: flex;
+  align-items: center;
+}
+.menu-principal-container .menu-item {
+  flex: 1 0 50px;
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+.menu-principal-container .menu-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(1rem, -1.292rem + 7.333vw, 1.75rem);
+  font-weight: 700;
+  font-family: "Teko", sans-serif;
+}
+
+#menu {
+  background-color: var(--couleur-arriere-accueil);
 }/*# sourceMappingURL=style.css.map */

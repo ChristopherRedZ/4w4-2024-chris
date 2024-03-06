@@ -14,13 +14,19 @@
 </head>
 
 <body>
+
+    <div id="menu" class="global">
+        <header class="menu__header">
+            <?php wp_nav_menu(array("container" => "nav")) ?>
+        </header>
+    </div>
     <div id="entete" class="global">
-        <header class="entete__header">
+        <section class="hero">
             <h1>Golden Heist - Rush of Gold(h1)</h1>
             <h2>Theme en création par Christopher Simeus(h2)</h2>
             <h3>TIM - College de Maisonneuve </h3>
             <button>Evenements</button>
-        </header>
+        </section>
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -33,8 +39,8 @@
     <div id="accueil" class="global">
         <section>
             <h2>Accueil(h2)</h2>
-            <div class="cours">
             <h4>Bienvenue dans mon site web ,  faites comme chez vous et mettex vous comfortable dans le coin(h4)</h4>
+            <div class="cours">
 
             <?php 
 
