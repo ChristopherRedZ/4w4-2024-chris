@@ -41,6 +41,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --couleur-galerie: hsl(var(--u1),100% ,15%);
   --couleur-footer: hsl(var(--u1),100% ,10%);
 }
+:root .carte {
+  --_couleur-arriere: hsl(var(--u1),100% ,30%);
+}
 
 * {
   margin: 0;
@@ -238,7 +241,9 @@ button:hover {
 .carte {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 0 1 20%;
+  justify-content: center;
+  flex: 1 0 230px;
   border: 1px solid #aaa;
+  background-color: var(--_couleur-arriere);
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
