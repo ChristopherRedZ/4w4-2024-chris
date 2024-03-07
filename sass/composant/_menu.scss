@@ -4,13 +4,15 @@
     position: absolute;
     background: rgb(0,0,0);
     background: linear-gradient(157deg, rgba(0,0,0,1) 0%, rgba(121,113,9,1) 35%, rgba(255,241,0,1) 100%);
-    // border: 5px solid whitesmoke;
+    border: 5px solid whitesmoke;
     transform: translateX(-130%);
+    transition: transform 0.5s ;
     z-index: 1;
-    // transition: translateY 1s;
+    
 
     @media (min-width: 700px) {
         transform: translateX(0);
+        
         position: static;
     }
     .menu { //ul
@@ -65,4 +67,5 @@
 
 #chk_burger:checked ~ .menu-principal-container {
     transform: translateX(0);
+    
 }

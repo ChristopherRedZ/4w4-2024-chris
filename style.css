@@ -262,7 +262,9 @@ button:hover {
   position: absolute;
   background: rgb(0, 0, 0);
   background: linear-gradient(157deg, rgb(0, 0, 0) 0%, rgb(121, 113, 9) 35%, rgb(255, 241, 0) 100%);
+  border: 5px solid whitesmoke;
   transform: translateX(-130%);
+  transition: transform 0.5s;
   z-index: 1;
 }
 @media (min-width: 700px) {

@@ -20,13 +20,7 @@ get_header();
 
             <?php 
 
-            // if(have_posts()){
-            //     while(have_posts()){
-            //         the_post();
-            //         the_title('<h3>','<h3>');
-            //         echo wp_trim_words(get_the_content(),30);
-            //     }
-            // }
+
 
             if(have_posts()):
 
