@@ -6,9 +6,10 @@
     background: linear-gradient(157deg, rgba(0,0,0,1) 0%, rgba(121,113,9,1) 35%, rgba(255,241,0,1) 100%);
     // border: 5px solid whitesmoke;
     transform: translateX(-130%);
+    z-index: 1;
     // transition: translateY 1s;
 
-    @media (max-width: 700px) {
+    @media (min-width: 700px) {
         transform: translateX(0);
         position: static;
     }
@@ -40,20 +41,21 @@
         font-family: 'Teko', sans-serif;
     }
     // Gestion label burger l'image svg dans un label
+    
+
     #burger {
         display: block;
         position: absolute;
         top: 15px;
         right: 15px;
-        @media (min-width: 700px) {
-            display: none;
-        }
-    }
-
-    #chk_burger:checked ~ .menu-principal-container {
-        transform: translateX(0);
+        
     }
 
 }
+#chk_burger{
+        display: none;
+}
 
-
+#chk_burger:checked ~ .menu-principal-container {
+    transform: translateX(0);
+}

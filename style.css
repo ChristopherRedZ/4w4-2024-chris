@@ -263,8 +263,9 @@ button:hover {
   background: rgb(0, 0, 0);
   background: linear-gradient(157deg, rgb(0, 0, 0) 0%, rgb(121, 113, 9) 35%, rgb(255, 241, 0) 100%);
   transform: translateX(-130%);
+  z-index: 1;
 }
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   .menu-principal-container {
     transform: translateX(0);
     position: static;
@@ -301,11 +302,11 @@ button:hover {
   top: 15px;
   right: 15px;
 }
-@media (min-width: 700px) {
-  .menu-principal-container #burger {
-    display: none;
-  }
+
+#chk_burger {
+  display: none;
 }
-.menu-principal-container #chk_burger:checked ~ .menu-principal-container {
+
+#chk_burger:checked ~ .menu-principal-container {
   transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */
