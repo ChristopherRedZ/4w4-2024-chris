@@ -1,20 +1,24 @@
 // Feuille de style menu principal
 
 .menu-principal-container { //Nav
+    position: absolute;
     background: rgb(0,0,0);
     background: linear-gradient(157deg, rgba(0,0,0,1) 0%, rgba(121,113,9,1) 35%, rgba(255,241,0,1) 100%);
-    border: 5px solid whitesmoke;
+    // border: 5px solid whitesmoke;
+    transform: translateX(-130%);
+    // transition: translateY 1s;
+
+    @media (max-width: 700px) {
+        transform: translateX(0);
+        position: static;
+    }
     .menu { //ul
-        position: absolute;
         display: flex;
         flex-direction: column;
-        transform: translateY(400%);
         @media (min-width: 700px) {
-            position: static;
             display: flex;
             flex-direction: row;
             align-items: center;
-            transform: translateY(0%);
         }
         
     }
@@ -46,8 +50,8 @@
         }
     }
 
-    #chk_burger:checked ~ .menu {
-        transform: translateY(0%);
+    #chk_burger:checked ~ .menu-principal-container {
+        transform: translateX(0);
     }
 
 }
