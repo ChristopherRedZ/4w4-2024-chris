@@ -15,7 +15,7 @@
     height: 129px;
 }
 
-.vague .shape-fill {
+.vague .remplissage {
     fill: var(--couleur-arriere-accueil);
 }
 
@@ -37,6 +37,6 @@
     height: 50px;
 }
 
-.vague2 .shape-fill {
-    fill: var(--couleur-arriere-accueil);
+.vague2 .remplissage {
+    fill: var(--_couleur-arriere-vague);
 }

@@ -44,6 +44,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 :root .carte {
   --_couleur-arriere: hsl(var(--u1),100% ,30%);
 }
+:root #entete {
+  --_couleur-arriere-vague: var(--couleur-arriere-entete);
+}
+:root #evenement {
+  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
+}
 
 * {
   margin: 0;
@@ -75,6 +81,11 @@ body {
 
 #entete, #footer {
   min-height: 15vh;
+}
+
+#menu__entete {
+  position: relative;
+  background-color: var(--couleur-arriere-accueil);
 }
 
 #entete {
@@ -192,7 +203,7 @@ button:hover {
   height: 129px;
 }
 
-.vague .shape-fill {
+.vague .remplissage {
   fill: var(--couleur-arriere-accueil);
 }
 
@@ -212,8 +223,8 @@ button:hover {
   height: 50px;
 }
 
-.vague2 .shape-fill {
-  fill: var(--couleur-arriere-accueil);
+.vague2 .remplissage {
+  fill: var(--_couleur-arriere-vague);
 }
 
 .diagonal {
@@ -253,8 +264,19 @@ button:hover {
   border: 5px solid whitesmoke;
 }
 .menu-principal-container .menu {
+  position: absolute;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  transform: translateY(400%);
+}
+@media (min-width: 700px) {
+  .menu-principal-container .menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transform: translateY(0%);
+  }
 }
 .menu-principal-container .menu-item {
   flex: 1 0 50px;
@@ -270,7 +292,17 @@ button:hover {
   font-weight: 700;
   font-family: "Teko", sans-serif;
 }
-
-#menu {
-  background-color: var(--couleur-arriere-accueil);
+.menu-principal-container #burger {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+@media (min-width: 700px) {
+  .menu-principal-container #burger {
+    display: none;
+  }
+}
+.menu-principal-container #chk_burger:checked ~ .menu {
+  transform: translateY(0%);
 }/*# sourceMappingURL=style.css.map */

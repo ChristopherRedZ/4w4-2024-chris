@@ -76,4 +76,12 @@
        --_couleur-arriere: hsl(var(--u1),100% ,30%);
     }
 
+    #entete{
+        --_couleur-arriere-vague : var(--couleur-arriere-entete);
+    }
+
+    #evenement{
+        --_couleur-arriere-vague : var(--couleur-arriere-accueil);
+    }
+
 }
