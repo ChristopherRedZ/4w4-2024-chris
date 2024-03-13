@@ -1,8 +1,7 @@
 <?php 
 get_header();
 ?>
-<h1>INDEX.PHP</h1>
-
+    <h1>FRONT-PAGE.PHP</h1>
     <div id="entete" class="global">
         <section class="hero">
             <h1>Golden Heist - Rush of Gold(h1)</h1>
@@ -37,19 +36,12 @@ get_header();
                 
                 while(have_posts()): the_post(); 
                     $titre = get_the_title();
-                    $sigle = substr($titre,0,7);
-                    $pos_parenthese = strpos($titre, '(');
-                    $duree = substr($titre,$pos_parenthese+1,-1);
-                    $titre = substr($titre,7,$pos_parenthese-7);
-
                 ?>
 
 
                 <div class="carte">
-                    <h2><?php echo $sigle;  ?></h2>
-                    <h3><?php echo $titre; ?></h3>
-                    <p><?php echo wp_trim_words(get_the_content(),30); ?></p>
-                    <h4>Durée: <?php echo  $duree; ?></h4>
+                    <h2><?php echo $titre; ?></h2>
+                    <p><?php the_content(); ?></p>
                 </div>
 
             <?php endwhile; ?>
