@@ -1,10 +1,11 @@
 <?php 
 get_header();
 ?>
-    <h1>FRONT-PAGE.PHP</h1>
+    <!-- <h1>FRONT-PAGE.PHP</h1> -->
     <div id="entete" class="global">
         <section class="hero">
-            <h1>Golden Heist - Rush of Gold(h1)</h1>
+            <h1><?php echo get_bloginfo("name") ; ?></h1>
+            <h1><?php echo get_bloginfo("description") ; ?></h1>
             <h2>Theme en création par Christopher Simeus(h2)</h2>
             <h3>TIM - College de Maisonneuve </h3>
             <button>Evenements</button>
@@ -40,8 +41,10 @@ get_header();
 
 
                 <div class="carte">
-                    <h2><?php echo $titre; ?></h2>
-                    <p><?php the_content(); ?></p>
+                    <h2><?php the_title(); ?></h2>
+                    <p><?php wp_trim_words(the_content() , 10); ?></p>
+                    <!-- Ajoute un lien vers l'article -->
+                    <a href="<?php the_permalink(); ?>">Suite</a>
                 </div>
 
             <?php endwhile; ?>
@@ -68,17 +71,4 @@ get_header();
         </section>
     </div>
 
-    <div id="footer" class="global">
-        <footer>
-            <h2>Footer(h2)</h2>
-            <div class="icons">
-                <i class="fa-solid fa-phone-volume"></i>
-                <i class="fa-solid fa-earth-americas"></i>
-                <i class="fa-solid fa-envelopes-bulk"></i>
-            </div>
-            
-        </footer>
-    </div>
-
-</body>
-</html>
+<?php get_footer() ?>

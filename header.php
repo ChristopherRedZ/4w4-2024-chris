@@ -18,6 +18,7 @@
 
     <div id="menu__entete" class="global">
         <header class="menu__header">
+            <?php echo get_custom_logo() ?>
             <input type="checkbox" name="" id="chk_burger">
             <label id="burger" for="chk_burger">
                 <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#fff">
