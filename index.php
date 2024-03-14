@@ -49,7 +49,6 @@ get_header();
                     <h2><?php echo $sigle;  ?></h2>
                     <h3><?php echo $titre; ?></h3>
                     <p><?php echo wp_trim_words(get_the_content(),30); ?></p>
-                    <h4>Durée: <?php echo  $duree; ?></h4>
                 </div>
 
             <?php endwhile; ?>

@@ -88,6 +88,25 @@ body {
   background-color: var(--couleur-arriere-accueil);
 }
 
+div.carte > p {
+  text-align: justify;
+  font-family: "Teko", sans-serif;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: larger;
+}
+
+div.carte > a {
+  font-family: "Teko", sans-serif;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+div.carte > a:visited {
+  text-decoration: none;
+}
+
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
