@@ -42,7 +42,7 @@ get_header();
 
                 <div class="carte">
                     <h2><?php the_title(); ?></h2>
-                    <p><?php wp_trim_words(the_content() , 10); ?></p>
+                    <p><?php echo wp_trim_words(get_the_content() , 30); ?></p>
                     <!-- Ajoute un lien vers l'article -->
                     <a href="<?php the_permalink(); ?>">Suite</a>
                 </div>
